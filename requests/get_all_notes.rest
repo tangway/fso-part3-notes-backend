@@ -10,3 +10,16 @@ content-type: application/json
   "important": true
 }
 
+###
+
+GET https://render-test-do6i.onrender.com/api/notes/
+
+###
+
+POST https://render-test-do6i.onrender.com/api/notes HTTP/1.1
+content-type: application/json
+
+{
+  "content": "REST client is good in testing backend",
+  "important": true
+}
