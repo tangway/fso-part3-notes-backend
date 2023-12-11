@@ -1,9 +1,19 @@
 const express = require("express");
-const cors = require("cors");
 const app = express();
 app.use(express.json());
 // used to allow scripts to interact with origins of differnt sources
-app.use(cors());
+const cors = require("cors");
+// app.use(cors());
+
+// added cors option
+const corsOptions = {
+  origin: 'https://render-test-do6i.onrender.com/',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  allowedHeaders: 'Content-Type,Authorization',
+};
+app.use(cors(corsOptions));
+
+
 require("dotenv").config();
 
 // this line displays the static files from /dist folder

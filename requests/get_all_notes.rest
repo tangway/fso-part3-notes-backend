@@ -30,7 +30,7 @@ content-type: application/json
 
 ###
 
-GET https://render-test-do6i.onrender.com/api/notes/
+GET http://render-test-do6i.onrender.com/api/notes/
 
 ###
 
